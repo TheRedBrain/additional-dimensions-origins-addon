@@ -4,12 +4,6 @@
 build/
 out/
 classes/
-gradle/
-build.gradle
-gradle.properties
-gradlew
-gradlew.bat
-settings.gradle
 
 # eclipse
 

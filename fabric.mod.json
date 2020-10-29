@@ -9,8 +9,8 @@
     "TheRedBrain"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    //"homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/TheRedBrain/origins-player-models"
   },
 
   "license": "CC0-1.0",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.github.theredbrain.originsplayermodels.OriginsPlayerModels"
     ]
   },
   "mixins": [
