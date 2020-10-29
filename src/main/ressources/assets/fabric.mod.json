@@ -9,11 +9,12 @@
     "TheRedBrain"
   ],
   "contact": {
+    "homepage": "",
     "sources": "https://github.com/TheRedBrain/origins-player-models"
   },
 
   "license": "CC0-1.0",
-  "icon": "ressources/assets/origins/icon.png",
+  "icon": "assets/originsplayermodels/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -22,7 +23,6 @@
     ]
   },
   "mixins": [
-    "originsplayermodels.mixins.json"
   ],
 
   "depends": {
