@@ -1,0 +1,122 @@
+{
+    "type": "origins:active_self",
+    "name": "Defying gravity",
+    "description": "Get your feet on the wall and go!",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:climbing"
+        },
+        "if_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0.01,
+                        "offset_z": 0,
+                        "offset_y": 0
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set east @s"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.01,
+                        "offset_z": 0,
+                        "offset_y": 0
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set west @s"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0,
+                        "offset_z": 0.01,
+                        "offset_y": 0
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set south @s"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0,
+                        "offset_z": -0.01,
+                        "offset_y": 0
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set north @s"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0,
+                        "offset_z": 0,
+                        "offset_y": 0.01
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set up @s"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0,
+                        "offset_z": 0,
+                        "offset_y": -0.01
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "gravity set down @s"
+                    }
+                }
+            ]
+        },
+        "else_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                      "type": "origins:block_collision",
+                      "offset_x": 0.01,
+                      "offset_z": 0.01,
+                      "offset_y": 0.01
+                    },
+                    {
+                      "type": "origins:block_collision",
+                      "offset_x": -0.01,
+                      "offset_z": -0.01,
+                      "offset_y": -0.01
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:nothing"
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "gravity set down @s"
+            }
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

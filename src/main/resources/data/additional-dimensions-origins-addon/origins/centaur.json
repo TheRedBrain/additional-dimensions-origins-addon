@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"origins:more_exhaustion",
+		"origins:sprint_jump",
+		"origins:tailwind",
+		"origins:vegetarian",
+		"additional-dimensions-origins-addon:stargazer",
+		"additional-dimensions-origins-addon:strong_claustrophobia"
+	],
+	"icon": "minecraft:leather_horse_armor",
+	"order": 1,
+	"impact": 2,
+	"name": "Centaur",
+	"description": "Inhabitant of the wide grass plains, this quadruped warrior can cover long distances easily."
+}
