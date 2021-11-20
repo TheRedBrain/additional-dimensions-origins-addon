@@ -1,41 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "additional-dimensions-origins-addon",
+  "id": "custom-player-models",
   "version": "0.0.1",
-  "pack_format": 7,
-  "name": "Additional Dimensions",
-  "description": "This mod is an addon for the Origins Minecraft mod by Apace.",
+  "name": "Custom Player Models",
+  "description": "This mod is an attempt to implement a customizable player model.",
   "authors": [
     "TheRedBrain"
   ],
   "contact": {
     "homepage": "",
-    "sources": "https://github.com/TheRedBrain/additional-dimensions-origins-addon"
+    "sources": "https://github.com/TheRedBrain/custom-player-models"
   },
 
   "license": "MIT",
-  "icon": "assets/additional-dimensions-origins-addon/icon.png",
+  "icon": "assets/custom-player-models/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.theredbrain.additionalDimensionsOriginsAddon.AdditionalDimensionsOriginsAddon"
+      "com.github.theredbrain.customPlayerModels.CustomPlayerModels"
+    ],
+    "client": [
+      "com.github.theredbrain.customPlayerModels.CustomPlayerModelsClient"
     ]
   },
   "mixins": [
-    "additional-dimensions-origins-addon.mixins.json"
+    "custom-player-models.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.1",
-    "java": ">=16",
-    "gravitychanger": "0.2.0",
-    "trinkets": "3.0.4",
-    "ccpacks": "1.0.0"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "java": ">=16"
   }
 }

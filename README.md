@@ -1,5 +1,21 @@
-# Additional Dimensions Origins Addon
+# Custom Player Models
 
 ## Introduction
 
-This mod is an addon for the [Origins mod by apace100](https://github.com/apace100/origins-fabric) that utilizes the [Gravity Changer mod by Gaider10](https://github.com/Gaider10/GravityChanger).
+This mod is an attempt to implement a customizable player model.
+    
+## TODO
+    model on entity ingame (done)
+
+    texture on entity ingame (done)
+    
+    get animations to play
+    
+    get custom model, texture and animation to show on the player
+        on zombie it already works
+
+    get custom model, texture and animation to show on other players
+    
+    only show custom stuff when player has the custom model power
+
+    custom model power determines which custom stuff is used per player
